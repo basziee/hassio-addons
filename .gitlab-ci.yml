@@ -2,7 +2,7 @@
 include: https://raw.githubusercontent.com/hassio-addons/organization/master/gitlabci/addon.yml
 
 variables:
-  ADDON_GITHUB_REPO: "hassio-addons/addon-adb"
+  ADDON_GITHUB_REPO: "basziee/homeassistant"
   ADDON_SLUG: "adb"
   ADDON_TARGET: "adb"
   ADDON_LEGACY_TAGS: "true"
