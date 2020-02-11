@@ -55,4 +55,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-CMD "cp /config/ssh/adb-addon/private/* /root/.ssh" ; sleep infinity
+CMD "cp /id_rsa.pub /root/.ssh" ; sleep infinity
