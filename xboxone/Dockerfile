@@ -1,5 +1,5 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+ARG hassioaddons/ubuntu-base:4.0.3
+FROM ubuntu:18.04
 
 ENV LANG C.UTF-8
 
@@ -9,12 +9,16 @@ RUN chmod a+x /run.sh
 
 # Install requirements for add-on
 RUN apk add --no-cache jq gcc musl-dev python3-dev libffi-dev openssl-dev python3 && \
+    apt-get update \
+    \
+    && apt-get install -y --no-install-recommends \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
-    rm -r /root/.cache
+    rm -r /root/.cache \
+    apt-get install iftables
 
 RUN pip3 install xbox-smartglass-rest==0.9.8
 
