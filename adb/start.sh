@@ -9,4 +9,4 @@ mkdir -p /root/.ssh
 cp /config/ssh/adb-addon/private/* /root/.ssh
 
 # Run the server
-service openssh-server start
+service ssh start
