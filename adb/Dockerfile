@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base-aarch64:4.0.3
+ARG BUILD_FROM=hassioaddons/ubuntu-base:4.0.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -54,4 +54,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-CMD ["/bin/bash" "-c" "hostname"]
+CMD ["-c" "hostname"]
