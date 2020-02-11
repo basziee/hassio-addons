@@ -75,9 +75,9 @@ WantedBy=multi-user.target
 
 In order to use some of the features listed above, you'll need to sign into Xbox Live.
 
-1. Surf to your Hass.io instance and use port `9001`
-    (e.g. `http://10.0.0.11:9001`).
-1. Authenticate by going to [/auth/oauth](http://10.0.0.11:9001/auth/oauth)
+1. Surf to your Hass.io instance and use port `5557`
+    (e.g. `http://hassio.local:5557`).
+1. Authenticate by going to [/auth/oauth](http://hassio.local:5557/auth/oauth)
     and following the directions.
 
 ## Home Assistant Configuration
@@ -85,7 +85,7 @@ In order to use some of the features listed above, you'll need to sign into Xbox
 This add-on creates a custom component in your hassio instance.  This component needs to be configured in order to display your Xbox in Home Assistant.  Follow the below steps to get started.
 
 1. Turn on all of the Xboxes you wish to be discovered.
-1. View the device list in this plugin: [10.0.0.11:9001/device](http://10.0.0.11:9001/device)
+1. View the device list in this plugin: [hassio.local:5557/device](http://hassio.local:5557/device)
 1. Create the `media_player` configuration using the `liveid` as the value for `device`.
 1. Restart Home Assistant to pick up the config change.
 
@@ -106,7 +106,7 @@ media_player:
 
 ### Option: `device`
 
-The LiveID of your Xbox One.  It can be found in `/device` endpoint.  Once this addon is up and running [click here](http://10.0.0.11:9001/device).
+The LiveID of your Xbox One.  It can be found in `/device` endpoint.  Once this addon is up and running [click here](http://hassio.local:5557/device).
 
 ### Option: `ip_address`
 
@@ -122,7 +122,7 @@ The friendly name for this Xbox which will appear in Home Assistant.
 
 Set to `false` if you have multiple consoles on your network and have issues with getting signed out.  Future features may require an authenticated connection with the console.
 
-**Note:** _This refers to an authenticated connection with the console.  You will still need to [authenticate with Xbox Live](http://10.0.0.11:9001/auth/oauth) to have the most useful features enabled (i.e. Friendly app names, images, and Source selection)._
+**Note:** _This refers to an authenticated connection with the console.  You will still need to [authenticate with Xbox Live](http://hassio.local:5557/auth/oauth) to have the most useful features enabled (i.e. Friendly app names, images, and Source selection)._
 
 ## Authors & Contributors
 
