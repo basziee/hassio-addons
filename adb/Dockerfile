@@ -54,4 +54,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-CMD "mkdir /root/.ssh && cp /config/ssh/adb-addon/private/* /root/.ssh" ; sleep infinity
+CMD "mkdir /root/.ssh" ; sleep infinity
