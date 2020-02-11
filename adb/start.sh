@@ -1,6 +1,6 @@
-#!/bin/bash
+# #!/bin/bash
 
-hostname > hostname
+# hostname > hostname
 #mkdir -p /root/.ssh
 # cp /config/ssh/adb-addon/private/* /root/.ssh
 
