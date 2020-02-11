@@ -26,6 +26,8 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+COPY run.sh /
+RUN chmod a+x /run.sh
 
 # Build arguments
 ARG BUILD_ARCH
