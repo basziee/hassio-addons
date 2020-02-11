@@ -12,6 +12,7 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         nano \
+        bash \
         openssh-server \
         adb=1:7.0.0+r33-2 \
         android-libadb=1:7.0.0+r33-2 \
