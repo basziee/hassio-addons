@@ -20,7 +20,8 @@
   "map": [
     "config:rw",
     "share:rw",
-    "ssl:rw"
+    "ssl:rw",
+    "ssh"
   ],
   "boot": "auto",
   "hassio_api": true,
