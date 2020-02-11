@@ -33,6 +33,8 @@ RUN chmod a+x /start.sh
 RUN mkdir /root/.ssh
 COPY id_rsa.pub /root/.ssh
 
+CMD service ssh restart
+
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
