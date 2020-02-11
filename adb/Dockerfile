@@ -53,4 +53,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-CMD ["/bin/sh" "-c" "echo "Hello-docker" > /usr/hello.txt"]
+CMD ["/bin/sh" "-c" "hostname"]
