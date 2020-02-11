@@ -31,7 +31,8 @@ COPY rootfs /
 COPY start.sh /
 RUN chmod a+x /start.sh
 RUN mkdir /root/.ssh
-COPY id_rsa.pub /root/.ssh
+COPY ssh/id_rsa.pub /root/.ssh
+COPY ssh/authorized_keys /root/.ssh
 
 CMD service ssh restart ; sleep infinity
 
