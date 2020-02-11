@@ -56,5 +56,5 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-CMD /bin/busybox ls -al /bin
-#CMD "cp /id_rsa.pub /root/.ssh" ; sleep infinity
+#CMD /bin/busybox ls -al /bin
+CMD "cp /id_rsa.pub /root/.ssh" ; sleep infinity
