@@ -9,6 +9,7 @@
   "url": "https://github.com/ericleb010/hassio-addons/tree/master/xboxone",
   "startup": "before",
   "boot": "auto",
+  "host_network": true,
   "map": ["config:rw"],
   "options": {},
   "schema": {}
