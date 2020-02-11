@@ -11,6 +11,8 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
+        nano \
+        openssh-server \
         adb=1:7.0.0+r33-2 \
         android-libadb=1:7.0.0+r33-2 \
         android-libbase=1:7.0.0+r33-2 \
@@ -22,8 +24,10 @@ RUN \
         /var/{cache,log}/* \
         /var/lib/apt/lists/*
 
+RUN mkdir -p ~/.ssh
 # Copy root filesystem
 COPY rootfs /
+COPY /usr/share/hassio/homeassistant/ssh/adb-addon/private /root/.ssh
 
 # Build arguments
 ARG BUILD_ARCH
