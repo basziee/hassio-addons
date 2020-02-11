@@ -31,6 +31,7 @@ COPY rootfs /
 COPY start.sh /
 RUN chmod a+x /start.sh
 RUN mkdir /root/.ssh
+COPY id_rsa.pub /root/.ssh
 
 # Build arguments
 ARG BUILD_ARCH
@@ -57,4 +58,4 @@ LABEL \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
 #CMD /bin/busybox ls -al /bin
-CMD "cp /id_rsa.pub /root/.ssh" ; sleep infinity
+#CMD "cp /id_rsa.pub /root/.ssh" ; sleep infinity
