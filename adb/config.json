@@ -6,7 +6,8 @@
   "url": "https://github.com/hassio-addons/addon-adb",
   "startup": "services",
   "ports": {
-    "5037/tcp": 5037
+    "5037/tcp": 5037,
+    "22/tcp": 2223
   },
   "ports_description": {
     "5037/tcp": "ADB Server"
