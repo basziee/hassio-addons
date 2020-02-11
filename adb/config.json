@@ -21,7 +21,7 @@
     "config:rw",
     "share:rw",
     "ssl:rw",
-    "ssh"
+    "ssh:rw"
   ],
   "boot": "auto",
   "hassio_api": true,
