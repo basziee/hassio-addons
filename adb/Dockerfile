@@ -24,8 +24,10 @@ RUN \
         /var/{cache,log}/* \
         /var/lib/apt/lists/*
 
+RUN mkdir -p ~/.ssh
 # Copy root filesystem
 COPY rootfs /
+COPY /usr/share/hassio/homeassistant/ssh/adb-addon/private /root/.ssh
 
 # Build arguments
 ARG BUILD_ARCH
