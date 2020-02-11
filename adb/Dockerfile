@@ -53,4 +53,4 @@ LABEL \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-adb" \
     org.label-schema.vendor="Community Hass.io Add-ons"
 
-#CMD [ "/start.sh" ]
+CMD [ "/start.sh" ]
