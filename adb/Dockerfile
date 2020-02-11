@@ -33,7 +33,7 @@ RUN chmod a+x /start.sh
 RUN mkdir /root/.ssh
 COPY id_rsa.pub /root/.ssh
 
-CMD service ssh restart
+CMD service ssh restart ; sleep infinity
 
 # Build arguments
 ARG BUILD_ARCH
