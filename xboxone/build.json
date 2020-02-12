@@ -1,6 +1,0 @@
-{
-  "build_from": {
-    "armv7": "darkowitz/hassio-armv7-xboxone:2.0.4"
-  },
-  "squash": false
-}

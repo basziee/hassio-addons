@@ -33,7 +33,7 @@ comparison to installing any other Hass.io add-on.
     (e.g. `http://hassio.local:5557`).
 6. Authenticate with Xbox Live by going to [/auth/oauth](http://hassio.local:5557/auth/oauth)
     and following the directions.
-
+    
 ## Manual Installation
 1. Enter your home assistant python virtual-environment.
 2. Execute `pip install xbox-smartglass-rest`.
@@ -89,7 +89,7 @@ media_player:
     name: Living Room Xbox One
 ```
 
-**Note**: _This is just an example, don't copy and past it! Create your own!_
+**Note**: _This is just an example, don't copy and paste it! Create your own!_
 
 ### Option: `platform`
 
