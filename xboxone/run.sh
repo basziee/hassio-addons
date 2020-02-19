@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Copy over the xbox component
-mkdir -p /config/custom_components/xboxone
-cp -f xboxone.py /config/custom_components/xboxone/media_player.py
-cp -f __init__.py /config/custom_components/xboxone/__init__.py
+mkdir -p /config/components/xboxone
+cp -f xboxone.py /config/components/xboxone/media_player.py
+cp -f __init__.py /config/components/xboxone/__init__.py
 
 # Persistent tokens on reboot
 touch /config/.xbox-token.json
